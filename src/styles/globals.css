@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .infoTextBox {
+    @apply bg-slate-50 cursor-default ease-in-out px-4 py-2 rounded-xl shadow-sm transition-all;
+  }
+}
