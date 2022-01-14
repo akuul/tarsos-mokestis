@@ -1,11 +1,7 @@
 import { useState } from 'react';
 import { BsQuestion } from 'react-icons/bs';
 
-type questionInfoProps = {
-  text: string;
-};
-
-const QuestionInfo = ({ text }: questionInfoProps) => {
+const QuestionInfo = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   const onClickHandler = () => {
@@ -14,14 +10,34 @@ const QuestionInfo = ({ text }: questionInfoProps) => {
   };
 
   return (
-    <div className='group relative top-[5px]'>
-      <BsQuestion onClick={onClickHandler} />
+    <div className='absolute group group right-2 top-[5px]'>
+      <BsQuestion
+        className='ease-in-out h-6 rounded-full text-white transition w-6 group-hover:bg-gray-50 group-hover:text-gray-900'
+        onClick={onClickHandler}
+      />
       <div
-        className={`-left-20 absolute infoTextBox opacity-0 select-none w-32 group-hover:opacity-100 group-hover:visible ${
+        className={`right-3 top-8 absolute infoTextBox opacity-0 select-none w-96 group-hover:opacity-100 group-hover:visible z-10 space-y-2 ${
           isVisible ? 'opacity-100 visible' : 'invisible'
         }`}
       >
-        <p className='text-xs'>{text}</p>
+        <div>
+          <p className='font-bold text-sm'>Dyzelinas</p>
+          <p className='text-xs'>
+            Dyzelinas ar dyzelins ir dujos, ar dyzelinas ir elektra
+          </p>
+        </div>
+        <div>
+          <p className='font-bold text-sm'>Benzinas</p>
+          <p className='text-xs'>Benzinas arba benzinas ir elektra</p>
+        </div>
+        <div>
+          <p className='font-bold text-sm'>Dujos</p>
+          <p className='text-xs'>
+            Dujos ar benzinas ir dujos, ar benzinas ir etanolis, ar benzinas ir
+            elektra ir dujos, ar benzinas ir etanolis ir dujos, ar dujos ir
+            elektra, ar etanolis, ar etanolis ir dujos
+          </p>
+        </div>
       </div>
     </div>
   );

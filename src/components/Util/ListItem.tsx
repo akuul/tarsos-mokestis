@@ -6,7 +6,11 @@ type ListItemProps = {
 
 const ListItem = ({ itemValue, clickHandler, itemName }: ListItemProps) => {
   return (
-    <li value={itemValue} onClick={clickHandler}>
+    <li
+      className='font-extralight px-4 text-gray-50 hover:bg-gray-800'
+      value={itemValue}
+      onClick={clickHandler}
+    >
       {itemName}
     </li>
   );

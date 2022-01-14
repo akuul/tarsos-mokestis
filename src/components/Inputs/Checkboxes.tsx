@@ -1,20 +1,48 @@
+import { useDispatch } from 'react-redux';
+
+import { addCarType } from '@/features/calculatorSlice';
+
 import Input from './Input/Input';
-import QuestionInfo from '../Util/QuestionInfo';
 
 const Checkboxes = () => {
+  const dispatch = useDispatch();
+
+  const updateCarType = (e: React.MouseEvent<HTMLInputElement>) => {
+    const target = e.target as HTMLInputElement;
+    dispatch(addCarType(target.value));
+  };
+
   return (
-    <div className='flex gap-5 justify-center'>
-      <div className='flex'>
-        <Input inputName='car-type' labelName='Dyzelinas' inputType='radio' />
-        <QuestionInfo text='Dyzelinas ar dyzelins ir dujos, ar dyzelinas ir elektra' />
+    <div className='flex flex-col gap-2 justify-center'>
+      <div className='flex flex-row-reverse gap-2 items-center justify-end'>
+        <Input
+          onClickUpdateState={updateCarType}
+          inputName='car-type'
+          labelName='Dyzelinas'
+          inputType='radio'
+          inputValue='diesel'
+          className='radioBtn'
+        />
       </div>
-      <div className='flex'>
-        <Input inputName='car-type' labelName='Benzinas' inputType='radio' />
-        <QuestionInfo text='Benzinas arba benzinas ir elektra' />
+      <div className='flex flex-row-reverse gap-2 items-center justify-end'>
+        <Input
+          className='radioBtn'
+          onClickUpdateState={updateCarType}
+          inputName='car-type'
+          labelName='Benzinas'
+          inputValue='petrol'
+          inputType='radio'
+        />
       </div>
-      <div className='flex'>
-        <Input inputName='car-type' labelName='Dujos' inputType='radio' />
-        <QuestionInfo text='Dujos ar benzinas ir dujos, ar benzinas ir etanolis, ar benzinas ir elektra ir dujos, ar benzinas ir etanolis ir dujos, ar dujos ir elektra, ar etanolis, ar etanolis ir dujos' />
+      <div className='flex flex-row-reverse gap-2 items-center justify-end'>
+        <Input
+          onClickUpdateState={updateCarType}
+          inputName='car-type'
+          labelName='Dujos'
+          inputType='radio'
+          inputValue='gas'
+          className='radioBtn'
+        />
       </div>
     </div>
   );

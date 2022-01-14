@@ -6,4 +6,8 @@
   .infoTextBox {
     @apply bg-slate-50 cursor-default ease-in-out px-4 py-2 rounded-xl shadow-sm transition-all;
   }
+
+  .radioBtn {
+    @apply appearance-none border h-4 ring-offset-2 ring-offset-black ring-slate-50 rounded-md transition-all w-4 checked:bg-[#f24661] hover:ring-1;
+  }
 }

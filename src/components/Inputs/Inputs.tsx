@@ -4,11 +4,13 @@ import PollutionInput from './PollutionInput';
 
 const Inputs = () => {
   return (
-    <main className='flex flex-col items-center pt-40'>
+    <div className='flex gap-10 items-start justify-center'>
       <Checkboxes />
-      <PollutionInput />
-      <EuroInputs />
-    </main>
+      <div className='flex flex-col gap-8 items-center justify-center'>
+        <PollutionInput />
+        <EuroInputs />
+      </div>
+    </div>
   );
 };
 
