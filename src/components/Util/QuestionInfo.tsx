@@ -12,7 +12,7 @@ const QuestionInfo = () => {
   return (
     <div className='absolute group group left-2 top-[5px]'>
       <BsQuestion
-        className='ease-in-out h-6 rounded-full text-white transition w-6 group-hover:bg-gray-50 group-hover:text-gray-900'
+        className='ease-in-out h-8 rounded-full text-white transition w-8 md:h-6 md:w-6 group-hover:bg-gray-50 group-hover:text-gray-900'
         onClick={onClickHandler}
       />
       <div
