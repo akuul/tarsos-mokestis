@@ -39,7 +39,7 @@ const Results = () => {
         onAnimationEnd={() => setBounce(false)}
         className={`${
           bounce && 'btnAnimation_press'
-        } border ease-in-out font-semibold overflow-visible p-2 rounded-md text-gray-50 transition-all w-full hover:bg-[#f24362] disabled:hover:bg-gray-900 disabled:opacity-40`}
+        } border ease-in-out font-semibold overflow-visible p-2 rounded-md text-gray-50 transition-all w-full hover-hover:bg-transparent hover:bg-[#f24362] disabled:hover:bg-gray-900 disabled:opacity-40 h-14`}
         onClick={onClickCalculatePrice}
       >
         APSKAIČIUOTI

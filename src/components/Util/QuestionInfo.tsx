@@ -13,7 +13,7 @@ const QuestionInfo = () => {
     <>
       <div className='absolute group left-2 top-[5px]'>
         <BsQuestion
-          className='h-8 p-1 rounded-full text-white w-8 md:h-10 md:w-10 group-hover:bg-gray-50 group-hover:text-gray-900'
+          className='h-10 p-1 rounded-full text-white w-10'
           onClick={onClickHandler}
         />
         <div

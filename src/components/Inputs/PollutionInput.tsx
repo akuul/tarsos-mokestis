@@ -35,7 +35,7 @@ const PollutionInput = () => {
     <div className='flex flex-col gap-2 relative text-center w-full md:w-auto'>
       <Input
         onChangeUpdateState={onChangeUpdatePollution}
-        className='font-semibold h-14 outline-2 outline-blue-500 p-1 ring-offset-2 ring-offset-black ring-slate-50 rounded-sm transition-shadow md:h-auto hover:ring-1 focus:outline focus:ring-0'
+        className='font-semibold h-14 outline-2 outline-blue-500 py-1 ring-offset-2 ring-offset-black ring-slate-50 rounded-sm text-center text-xl transition-shadow md:h-auto md:text-base hover:ring-1 focus:outline focus:ring-0'
         labelName='Išmetamas CO2 kiekis, g/km'
         inputType='text'
         inputName='pollution'
