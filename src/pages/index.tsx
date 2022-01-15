@@ -10,11 +10,11 @@ export default function HomePage() {
     <>
       <div className='-z-10 absolute bg-gradient-to-tr from-[#f25b3e] h-screen inset-0 to-[#f24362]' />
       <h1 className='mt-40 text-3xl text-center text-gray-50'>
-        Taršos mokesčio skaičiuoklė
+        Automobilio taršos mokesčio skaičiuoklė
       </h1>
 
-      {/* <Seo templateTitle='Home' /> */}
-      <Seo />
+      <Seo templateTitle='Automobilio taršos mokesčio skaičiuoklė' />
+
       <main className='bg-[#1a1a1a] mt-6 mx-auto px-8 py-10 relative rounded-xl shadow-[#f24362] shadow-lg w-1/4 z-10'>
         <QuestionInfo />
         <Inputs />

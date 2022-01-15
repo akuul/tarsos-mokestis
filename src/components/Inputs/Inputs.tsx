@@ -4,7 +4,7 @@ import PollutionInput from './PollutionInput';
 
 const Inputs = () => {
   return (
-    <div className='flex gap-10 items-start justify-center'>
+    <div className='flex gap-10 items-center justify-center'>
       <Checkboxes />
       <div className='flex flex-col gap-8 items-center justify-center'>
         <PollutionInput />

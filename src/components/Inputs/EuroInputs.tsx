@@ -26,7 +26,7 @@ const EuroInputs = () => {
       <p className='font-extralight mb-2 text-gray-50 text-lg'>
         Automobilio Euro Standartas
       </p>
-      <div className='absolute border rounded-md w-full'>
+      <div className='absolute border rounded-md w-full z-10'>
         <div
           onClick={() => setOptionsOpen(!optionsOpen)}
           className='cursor-pointer flex justify-between px-4 py-2'
@@ -45,22 +45,22 @@ const EuroInputs = () => {
         >
           <ListItem
             clickHandler={clickHandler}
-            itemValue='3'
+            itemValue='4'
             itemName='Euro 6 ar naujesnis'
           />
           <ListItem
             clickHandler={clickHandler}
-            itemValue='2'
+            itemValue='3'
             itemName='Euro 5'
           />
           <ListItem
             clickHandler={clickHandler}
-            itemValue='1'
+            itemValue='2'
             itemName='Euro 3, 4'
           />
           <ListItem
             clickHandler={clickHandler}
-            itemValue='0'
+            itemValue='1'
             itemName='Euro 1, 2'
           />
         </ul>

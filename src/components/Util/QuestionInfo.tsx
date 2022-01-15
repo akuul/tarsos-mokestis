@@ -10,13 +10,13 @@ const QuestionInfo = () => {
   };
 
   return (
-    <div className='absolute group group right-2 top-[5px]'>
+    <div className='absolute group group left-2 top-[5px]'>
       <BsQuestion
         className='ease-in-out h-6 rounded-full text-white transition w-6 group-hover:bg-gray-50 group-hover:text-gray-900'
         onClick={onClickHandler}
       />
       <div
-        className={`right-3 top-8 absolute infoTextBox opacity-0 select-none w-96 group-hover:opacity-100 group-hover:visible z-10 space-y-2 ${
+        className={`left-3 top-8 absolute infoTextBox opacity-0 select-none w-96 group-hover:opacity-100 group-hover:visible z-20 space-y-2 ${
           isVisible ? 'opacity-100 visible' : 'invisible'
         }`}
       >

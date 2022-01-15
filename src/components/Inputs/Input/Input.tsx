@@ -8,6 +8,10 @@ type InputProps = {
   onChangeUpdateState?: (e: React.ChangeEvent<HTMLInputElement>) => void;
 };
 
+/* 
+! Could use {...rest} for unknown props
+*/
+
 const Input = ({
   inputName,
   inputType,
