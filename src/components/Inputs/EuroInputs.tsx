@@ -22,8 +22,8 @@ const EuroInputs = () => {
   };
 
   return (
-    <div className='relative text-center w-full md:w-auto'>
-      <p className='font-extralight mb-2 text-gray-50 text-lg'>
+    <div className='relative w-full md:w-auto'>
+      <p className='font-extralight mb-2 text-center text-gray-50 text-lg'>
         Automobilio Euro Standartas
       </p>
       <div className='absolute border rounded-md w-full z-10'>
@@ -39,7 +39,7 @@ const EuroInputs = () => {
           />
         </div>
         <ul
-          className={` cursor-pointer overflow-hidden transition-all duration-200 ease-out bg-[#1a1a1a] ${
+          className={` cursor-pointer overflow-hidden transition-all duration-200 ease-out bg-[#1a1a1a]  ${
             optionsOpen ? 'h-40' : 'h-0'
           }`}
         >
