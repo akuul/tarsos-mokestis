@@ -17,7 +17,7 @@ const QuestionInfo = () => {
           onClick={onClickHandler}
         />
         <div
-          className={`left-3 top-8 absolute infoTextBox opacity-0 select-none w-96 md:group-hover:opacity-100 md:group-hover:block z-20 space-y-2 ${
+          className={`left-3 top-12 absolute infoTextBox opacity-0 select-none w-96 md:group-hover:opacity-100 md:group-hover:block z-20 space-y-2 ${
             isVisible ? 'opacity-100 block' : 'hidden'
           }`}
         >
