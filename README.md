@@ -1,6 +1,6 @@
 ## Automobilio taršos mokesčio skaičiuoklė
 
-Car pollution annual payment calculator. [Copy of deprecated calculator](https://github.com/akuul/cocalc) of I made earlier.
+Car pollution annual payment calculator. [Copy of deprecated calculator](https://github.com/akuul/cocalc) I made earlier.
 
 Made with love using **NextJS, Typescript, Redux Toolkit, Tailwind CSS** and other cool things!
 
