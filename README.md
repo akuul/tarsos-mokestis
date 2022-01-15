@@ -4,6 +4,8 @@ Car pollution annual payment calculator. [Copy of deprecated calculator](https:/
 
 Made with love using **NextJS, Typescript, Redux Toolkit, Tailwind CSS** and other cool things!
 
+https://tarsos-mokestis.vercel.app/
+
 ## Available Scripts
 
 In the project directory, you can run:
