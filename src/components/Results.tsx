@@ -44,10 +44,10 @@ const Results = () => {
       >
         APSKAIČIUOTI
       </button>
-      <div className='mt-10 text-gray-50'>
-        <p className='text-xl'>
+      <div className='mt-10 text-center text-gray-50'>
+        <p className='text-lg'>
           Taršos mokestis:{' '}
-          <span className='font-semibold text-3xl'>{price.toFixed(2)}</span>
+          <span className='font-semibold text-2xl'>{price.toFixed(2)}</span>
           &euro;
         </p>
       </div>
