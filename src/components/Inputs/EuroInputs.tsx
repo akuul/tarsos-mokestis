@@ -18,7 +18,7 @@ const EuroInputs = () => {
     const target = e.target as HTMLLIElement;
     setOptionsOpen(false);
     setSelectedValue(target.textContent);
-    dispatch(addEuro(target.value));
+    dispatch(addEuro(target.getAttribute('value')));
   };
 
   return (
@@ -45,22 +45,22 @@ const EuroInputs = () => {
         >
           <ListItem
             clickHandler={clickHandler}
-            itemValue='4'
+            itemValue='Euro6'
             itemName='Euro 6 ar naujesnis'
           />
           <ListItem
             clickHandler={clickHandler}
-            itemValue='3'
+            itemValue='Euro5'
             itemName='Euro 5'
           />
           <ListItem
             clickHandler={clickHandler}
-            itemValue='2'
+            itemValue='Euro34'
             itemName='Euro 3, 4'
           />
           <ListItem
             clickHandler={clickHandler}
-            itemValue='1'
+            itemValue='Euro21'
             itemName='Euro 1, 2'
           />
         </ul>

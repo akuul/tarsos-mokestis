@@ -7,8 +7,7 @@ import QuestionInfo from '@/components/Util/QuestionInfo';
 
 export default function HomePage() {
   return (
-    <>
-      <div className='-z-10 absolute bg-gradient-to-tr from-[#f25b3e] h-screen inset-0 to-[#f24362]' />
+    <div className='-z-10 absolute bg-gradient-to-tr from-[#f25b3e] h-screen inset-0 to-[#f24362]'>
       <h1 className='mt-20 text-3xl text-center text-gray-50 md:mt-40'>
         Automobilio taršos mokesčio skaičiuoklė
       </h1>
@@ -20,6 +19,6 @@ export default function HomePage() {
         <Inputs />
         <Results />
       </main>
-    </>
+    </div>
   );
 }

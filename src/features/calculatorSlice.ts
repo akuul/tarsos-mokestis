@@ -1,13 +1,13 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 export interface CalculatorState {
-  euroStandard: number;
+  euroStandard: string | null;
   pollution: number;
   carType: string;
 }
 
 const initialState: CalculatorState = {
-  euroStandard: 0,
+  euroStandard: '',
   pollution: 0,
   carType: '',
 };
@@ -16,7 +16,7 @@ export const calculatorSlice = createSlice({
   name: 'calculator',
   initialState,
   reducers: {
-    addEuro: (state, action: PayloadAction<number>) => {
+    addEuro: (state, action: PayloadAction<string | null>) => {
       state.euroStandard = action.payload;
     },
     addPollution: (state, action: PayloadAction<number>) => {

@@ -1,21 +1,13 @@
-/*
- * 4 - EURO 6 ir naujesni
- * 3 - EURO 5
- * 2 - EURO 4, EURO 3
- * 1 - EURO 2, EURO 1
-  TODO: Figure out how types work here
- */
-
 const carTypeCofs: any = {
-  diesel: { 4: 1.7, 3: 2, 2: 2.3, 1: 2.5 },
-  petrol: { 4: 0.9, 3: 1, 2: 1.1, 1: 1.4 },
-  gas: { 4: 0.8, 3: 0.9, 2: 1, 1: 1.3 },
+  diesel: { Euro6: 1.7, Euro5: 2, Euro34: 2.3, Euro21: 2.5 },
+  petrol: { Euro6: 0.9, Euro5: 1, Euro34: 1.1, Euro21: 1.4 },
+  gas: { Euro6: 0.8, Euro5: 0.9, Euro34: 1, Euro21: 1.3 },
 };
 
 const CalcLogic = (
   pollution: number,
   carType: keyof typeof carTypeCofs,
-  euroStandard: number
+  euroStandard: string | null
 ) => {
   if (euroStandard && carType) {
     const euroCof = carTypeCofs[carType][euroStandard];
